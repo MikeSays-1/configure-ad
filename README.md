@@ -92,9 +92,17 @@ In the search bar, type "VM", select Virtual Machines and press "+ Create" and s
 <img width="1035" height="871" alt="image" src="https://github.com/user-attachments/assets/580cc793-f5d1-430b-ae61-cdc3f62327a9" />
 </p>
 </details>  
-<p>In the Nerwoking screen, for Virtual Network, select our created vnet from Step 2. "vnet-ad-lab".  for Subnet, select default. We're finished with Networking settings, select "Review + Create" and finally "Create". Now we will set the NIC Private IP Address to Static. Once your Domain Controller VM is deployed, view the VM by typing "vm" in the search bar > select "Virtual Machines" > select "vm-dc-1".  On the left pane, find "Network" > "Network Settings". Here, select your "Network Interface" under "Essentials", Near the bottom select "Configure Your IPs" > Select "ipconfig1" Set Private Allocation settings to Static. Lastly, log into the VM and disable the Windows Firewall. (We will be testing connectivity)</p>
-<br />
+<p>In the Nerwoking screen, for Virtual Network, select our created vnet from Step 2. "vnet-ad-lab".  for Subnet, select default. We're finished with Networking settings, select "Review + Create" and finally "Create". 
 
+<details>
+<summary><b>See screenshots</b></summary>
+<img width="1044" height="882" alt="image" src="https://github.com/user-attachments/assets/93e8e7c1-6186-4197-816c-10d1f5bd3b17" />
+</details>
+  
+<br />Now we will set the NIC Private IP Address to Static. Once your Domain Controller VM is deployed, view the VM by typing "vm" in the search bar > select "Virtual Machines" > select "vm-dc-1".  On the left pane, find "Network" > "Network Settings". Here, select your "Network Interface" under "Essentials", Near the bottom select "Configure Your IPs" > Select "ipconfig1" Set Private Allocation settings to Static. And now "Save". Go back to your listed VMs, and note/copy the Public IP of the Domain Controller.
+<br />
+On your local computer (Windows or macOS), open a Remote Desktop client and connect to the VM using  public IP address. Lastly, from your log into the VM and disable the Windows Firewall. (We will be testing connectivity)
+</p>
 <p><b>TItle Here </b> <br />
 Txt Here
 </p>
