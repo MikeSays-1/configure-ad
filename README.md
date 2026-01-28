@@ -43,9 +43,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   <img src="https://github.com/user-attachments/assets/0ba247ce-8e26-472a-aeda-0a1985f1ab6e" width="48%" />
 </p>
 </details>
-
 <br />
-
 <p><b>2. CREATE VIRTUAL NETWORK. </b> 
 <br />In the search bar, type "Virtual Networks", select Virtual Networks and press "+ Create" to start creation of your Virtual Network. Select the resource group we just made and name your virtual network "vnet-ad-lab", select "Review + Create" and finally "Create".
 </p>
@@ -56,11 +54,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img width="1124" height="917" alt="image" src="https://github.com/user-attachments/assets/334aad79-f8c4-4397-8ad0-2dc2176f0359" />
 </p>
 </details>  
-
 <br />
-
-
-
 <p><b>3. CREATE VM DOMAIN CONTROLLER</b> <br />
 In the search bar, type "VM", select Virtual Machines and press "+ Create" and select "Virtual Machines" to start creation of your Virtual Machine. Select the "rg-ad-lab" as the resource group, name your vm "vm-dc-1".  For Image, select "Windows Server 2022, Datacenter: Azure Edition - x64 Gen2" For Size, select any with 2 VCPUs and at least 16 GB Ram. Set your username and password in the Admin Account section. Near the bottom, select "Next : Disk >" continue on to "Next : Networking >".
 </p>
@@ -147,12 +141,14 @@ From here, select "Promote this server to a domain controller". In the Domain Co
 </p>
 </details>  
 <p>Once signed out, RDP will restart for the VM, select "More Options" and clear the username field, and enter mydomain.com\"yourcreatedcredentials" and password.</p>
+<br />
 <details>
 <summary><i>See screenshots</i></summary><p>
 <img width="406" height="489" alt="image" src="https://github.com/user-attachments/assets/fe139151-9e63-4422-a50d-592864edfb07" />
 </p>
 </details> 
-Once logged back into the Domain Controller, we can review the Server Manager Dashboard and verify that the Active Directory Domain Services and DNS roles are installed and running!
+Once logged back into the Domain Controller, we can review the Server Manager Dashboard and verify that the Active Directory Domain Services and DNS roles are installed and running! 
+<br />
 <details>
 <summary><i>See screenshots</i></summary><p>
 <img width="1416" height="742" alt="image" src="https://github.com/user-attachments/assets/729d55f7-7a97-43b6-b9c6-115d690927b3" />
