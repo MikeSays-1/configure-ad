@@ -59,7 +59,34 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <br />
 
-<p><b>3. CREATE VM CLIENT 1. </b> <br />
+
+
+<p><b>3. CREATE VM DOMAIN CONTROLLER</b> <br />
+In the search bar, type "VM", select Virtual Machines and press "+ Create" and select "Virtual Machines" to start creation of your Virtual Machine. Select the "rg-ad-lab" as the resource group, name your vm "vm-dc-1".  For Image, select "Windows Server 2022, Datacenter: Azure Edition - x64 Gen2" For Size, select any with 2 VCPUs and at least 16 GB Ram. Set your username and password in the Admin Account section. Near the bottom, select "Next : Disk >" continue on to "Next : Networking >".
+</p>
+
+<details>
+<summary><b>See screenshots</b></summary>
+<p>
+<img width="1035" height="871" alt="image" src="https://github.com/user-attachments/assets/580cc793-f5d1-430b-ae61-cdc3f62327a9" />
+</p>
+</details>  
+<p>In the Nerwoking screen, for Virtual Network, select our created vnet from Step 2. "vnet-ad-lab".  for Subnet, select default. We're finished with Networking settings, select "Review + Create" and finally "Create". 
+
+<details>
+<summary><b>See screenshots</b></summary>
+<img width="1044" height="882" alt="image" src="https://github.com/user-attachments/assets/93e8e7c1-6186-4197-816c-10d1f5bd3b17" />
+</details>
+  
+<br />Now we will set the NIC Private IP Address to Static. Once your Domain Controller VM is deployed, view the VM by typing "vm" in the search bar > select "Virtual Machines" > select "vm-dc-1".  On the left pane, find "Network" > "Network Settings". Here, select your "Network Interface" under "Essentials", Near the bottom select "Configure Your IPs" > Select "ipconfig1" and set Private IP Allocation settings to Static. And now "Save". Go back to your listed VMs, and note/copy the Public IP of the Domain Controller.
+<br />
+
+<img width="457" height="314" alt="image" src="https://github.com/user-attachments/assets/1fca2cfd-3d12-4034-97fa-71a051ec2c92" />
+
+On your local computer (Windows or macOS), open a Remote Desktop client and connect to the VM using public IP address, you'll be prompted to enter your credentials you created when creating this VM. Next prompt, select yes, and your Domain Controller will now boot. Once booted, open "Windows Defender Firewall with Advanced Security", go to "Windows Defender Firewall Properties", and for Firewall State: Select "Off" for Domain, Public and Private Profiles and select Apply. (We will be testing connectivity.)
+</p>
+
+<p><b>4. CREATE VM CLIENT 1. </b> <br />
 In the search bar, type "VM", select Virtual Machines and press "+ Create" and select "Virtual Machines" to start creation of your Virtual Machine. Select the "rg-ad-lab" as the resource group, name your vm "vm-client-1".  For Image, select "Windows 10 Enterprise, version 22H2 - x64 Gen 2" For Size, select any with 2 VCPUs and at least 16 GB Ram. Set your username and password in the Admin Account section. Near the bottom, mark the checkbox in the Licensing section and select "Next : Disk >" continue on to "Next : Networking >".
 </p>
 <details>
@@ -81,28 +108,6 @@ Image Here
 </details>  
 
 <br />
-
-<p><b>3. CREATE VM DOMAIN CONTROLLER</b> <br />
-In the search bar, type "VM", select Virtual Machines and press "+ Create" and select "Virtual Machines" to start creation of your Virtual Machine. Select the "rg-ad-lab" as the resource group, name your vm "vm-dc-1".  For Image, select "Windows Server 2022, Datacenter: Azure Edition - x64 Gen2" For Size, select any with 2 VCPUs and at least 16 GB Ram. Set your username and password in the Admin Account section. Near the bottom, select "Next : Disk >" continue on to "Next : Networking >".
-</p>
-
-<details>
-<summary><b>See screenshots</b></summary>
-<p>
-<img width="1035" height="871" alt="image" src="https://github.com/user-attachments/assets/580cc793-f5d1-430b-ae61-cdc3f62327a9" />
-</p>
-</details>  
-<p>In the Nerwoking screen, for Virtual Network, select our created vnet from Step 2. "vnet-ad-lab".  for Subnet, select default. We're finished with Networking settings, select "Review + Create" and finally "Create". 
-
-<details>
-<summary><b>See screenshots</b></summary>
-<img width="1044" height="882" alt="image" src="https://github.com/user-attachments/assets/93e8e7c1-6186-4197-816c-10d1f5bd3b17" />
-</details>
-  
-<br />Now we will set the NIC Private IP Address to Static. Once your Domain Controller VM is deployed, view the VM by typing "vm" in the search bar > select "Virtual Machines" > select "vm-dc-1".  On the left pane, find "Network" > "Network Settings". Here, select your "Network Interface" under "Essentials", Near the bottom select "Configure Your IPs" > Select "ipconfig1" Set Private Allocation settings to Static. And now "Save". Go back to your listed VMs, and note/copy the Public IP of the Domain Controller.
-<br />
-On your local computer (Windows or macOS), open a Remote Desktop client and connect to the VM using  public IP address. Lastly, from your log into the VM and disable the Windows Firewall. (We will be testing connectivity)
-</p>
 <p><b>TItle Here </b> <br />
 Txt Here
 </p>
