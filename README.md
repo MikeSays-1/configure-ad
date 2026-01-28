@@ -31,7 +31,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-1. CREATE RESOURCE GROUP. Log into Azure Portal, and in the search bar type "Resource Groups", select Resource Groups and press "+ Create" to create a resouce group. Name your resource group "rg-ad-lab" and select "Review + Create", finally "Create".
+<b>1. CREATE RESOURCE GROUP. </b> Log into Azure Portal, and in the search bar type "Resource Groups", select Resource Groups and press "+ Create" to create a resouce group. Name your resource group "rg-ad-lab" and select "Review + Create", finally "Create".
 <br />
 </p>
 
@@ -43,7 +43,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <br />
 
 <p>
-2. CREATE VIRTUAL NETWORK. In the search bar, type "Virtual Networks", select Virtual Networks and press "+ Create" to start creation of your Virtual Network. Select the resource group we just made and name your virtual network "vnet-ad-lab", select "Review + Create" and finally "Create".
+<b></b>2. CREATE VIRTUAL NETWORK. </b> In the search bar, type "Virtual Networks", select Virtual Networks and press "+ Create" to start creation of your Virtual Network. Select the resource group we just made and name your virtual network "vnet-ad-lab", select "Review + Create" and finally "Create".
 </p>
 <p>
 <img width="1124" height="917" alt="image" src="https://github.com/user-attachments/assets/334aad79-f8c4-4397-8ad0-2dc2176f0359" />
