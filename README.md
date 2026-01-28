@@ -134,5 +134,28 @@ Return to our Domain Controller from Step 3. View or Open "Server Manager > Dash
 <img width="1036" height="742" alt="image" src="https://github.com/user-attachments/assets/5a75b044-f685-4b0d-8889-407f8d570002" />
 </p>
 </details>  
-
+<p>Once feature is finsihed installing, select "Close". On your Server Manager Dashboard, select  the notifications icon.</p>
+<details>
+<summary><i>See screenshots</i></summary><p>
+<img width="1424" height="750" alt="image" src="https://github.com/user-attachments/assets/c2c3b961-6440-4854-9c44-99cd3dc3b9f4" />
+</p>
+</details>  
+From here, select "Promote this server to a domain controller". In the Domain Configuration screen, select "Add a new forest" and in Root domain name field, type "mydomain.com".  (you may name the forest anything) Select "Next", in the Domain Controller Options, you will need to set the DSRM Password here. Select "Next" 5 more times from here, and lastly "Install". The VM will install the new forest and will sign out automatically.
+<details>
+<summary><i>See screenshots</i></summary><p>
+<img width="1409" height="729" alt="image" src="https://github.com/user-attachments/assets/bfd708ee-f4e3-407a-9495-39a7ae186fdc" />
+</p>
+</details>  
+<p>Once signed out, RDP will restart for the VM, select "More Options" and clear the username field, and enter mydomain.com\"yourcreatedcredentials" and password.</p>
+<details>
+<summary><i>See screenshots</i></summary><p>
+<img width="406" height="489" alt="image" src="https://github.com/user-attachments/assets/fe139151-9e63-4422-a50d-592864edfb07" />
+</p>
+</details> 
+Once logged back into the Domain Controller, we can review the Server Manager Dashboard and verify that the Active Directory Domain Services and DNS roles are installed and running!
+<details>
+<summary><i>See screenshots</i></summary><p>
+<img width="1416" height="742" alt="image" src="https://github.com/user-attachments/assets/729d55f7-7a97-43b6-b9c6-115d690927b3" />
+</p>
+</details> 
 <br />
