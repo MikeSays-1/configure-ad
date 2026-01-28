@@ -50,6 +50,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <b>2. CREATE VIRTUAL NETWORK. </b> 
 <br />In the search bar, type "Virtual Networks", select Virtual Networks and press "+ Create" to start creation of your Virtual Network. Select the resource group we just made and name your virtual network "vnet-ad-lab", select "Review + Create" and finally "Create".
 </p>
+> **Screenshot:** Creating a Resource Group in Azure
 <p>
 <img width="1124" height="917" alt="image" src="https://github.com/user-attachments/assets/334aad79-f8c4-4397-8ad0-2dc2176f0359" />
 
