@@ -31,7 +31,7 @@ This project demonstrates the deployment of a traditional on-premises Active Dir
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-<table>
+<table style="border:none;">
 <tr>
 <td>
 
@@ -45,7 +45,7 @@ This project demonstrates the deployment of a traditional on-premises Active Dir
 </td>
 <td>
 
-<img src="https://github.com/user-attachments/assets/b8f73a9e-908c-4303-a79f-e416481b2ef5" width="300">
+<img src="https://github.com/user-attachments/assets/b8f73a9e-908c-4303-a79f-e416481b2ef5" width="50%">
 
 </td>
 </tr>
