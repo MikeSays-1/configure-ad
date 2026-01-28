@@ -98,8 +98,9 @@ In the search bar, type "VM", select Virtual Machines and press "+ Create" and s
 <br />
 <p>In the Nerwoking screen, for Virtual Network, select our created vnet from Step 2. "vnet-ad-lab".  for Subnet, select default. We're finished with Networking, now select "Review + Create" and finally "Create". 
 
-<br />
-Once deployed, back out to your list of VMs, and select "vm-dc-1" > Select "Network Settings" on the left pane. Copy/Note the Private IP Addess of vm-dc-1. Back out to list of VMs, select vm-client-1 > Select "Network Settings" on the left pane > Select your Network Interface Card <img width="507" height="89" alt="image" src="https://github.com/user-attachments/assets/9dbffada-3501-4542-bdf9-65dbad60211c" />
+<br /><br />
+
+Once deployed, back out to your list of VMs, and select "vm-dc-1" > Select "Network Settings" on the left pane. Copy/Note the Private IP Addess of vm-dc-1. Back out to list of VMs, select vm-client-1 > Select "Network Settings" on the left pane > Select your Network Interface Card
 
 </p>
 
