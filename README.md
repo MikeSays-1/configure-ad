@@ -12,6 +12,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>Environments and Technologies Used</h2>
 
+<img src="https://skillicons.dev/icons?i=azure,windows,powershell" />
+
+
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Active Directory Domain Services
