@@ -83,16 +83,16 @@ Image Here
 <br />
 
 <p><b>3. CREATE VM DOMAIN CONTROLLER</b> <br />
-In the search bar, type "VM", select Virtual Machines and press "+ Create" and select "Virtual Machines" to start creation of your Virtual Machine. Select the "rg-ad-lab" as the resource group, name your vm "vm-client-1".  For Image, select "Windows 10 Enterprise, version 22H2 - x64 Gen 2" For Size, select any with 2 VCPUs and at least 16 GB Ram. Set your username and password in the Admin Account section. Near the bottom, mark the checkbox in the Licensing section and select "Next : Disk >" continue on to "Next : Networking >".
+In the search bar, type "VM", select Virtual Machines and press "+ Create" and select "Virtual Machines" to start creation of your Virtual Machine. Select the "rg-ad-lab" as the resource group, name your vm "vm-dc-1".  For Image, select "Windows Server 2022, Datacenter: Azure Edition - x64 Gen2" For Size, select any with 2 VCPUs and at least 16 GB Ram. Set your username and password in the Admin Account section. Near the bottom, select "Next : Disk >" continue on to "Next : Networking >".
 </p>
 
 <details>
 <summary><b>See screenshots</b></summary>
 <p>
-Image Here
+<img width="1035" height="871" alt="image" src="https://github.com/user-attachments/assets/580cc793-f5d1-430b-ae61-cdc3f62327a9" />
 </p>
 </details>  
-
+<p>In the Nerwoking screen, for Virtual Network, select our created vnet from Step 2. "vnet-ad-lab".  for Subnet, select default. We're finished with Networking settings, select "Review + Create" and finally "Create". Now we will set the NIC Private IP Address to Static. Once your Domain Controller VM is deployed, view the VM by typing "vm" in the search bar > select "Virtual Machines" > select "vm-dc-1".  On the left pane, find "Network" > "Network Settings". Here, select your "Network Interface" under "Essentials", Near the bottom select "Configure Your IPs" > Select "ipconfig1" Set Private Allocation settings to Static. Lastly, log into the VM and disable the Windows Firewall. (We will be testing connectivity)</p>
 <br />
 
 <p><b>TItle Here </b> <br />
