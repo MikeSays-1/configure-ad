@@ -27,6 +27,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
+![Configure Azure and AD flow chart](https://github.com/user-attachments/assets/b8f73a9e-908c-4303-a79f-e416481b2ef5)
+
+
 - Setup Domain Controller in Azure
 - Setup Client-1 in Azure
 - Install Active Directory
