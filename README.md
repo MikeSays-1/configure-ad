@@ -50,7 +50,7 @@ This project demonstrates the deployment of a traditional on-premises Active Dir
 </details>
 
 
-<b>2. CREATE VIRTUAL NETWORK. </b>
+<h3>2. CREATE VIRTUAL NETWORK. </h3>
 <p>In the search bar, type "Virtual Networks", select Virtual Networks and press "+ Create" to start creation of your Virtual Network. Select the resource group we just made and name your virtual network "vnet-ad-lab", select "Review + Create" and finally "Create". </p>
 
 <details><summary>See screenshots</summary>
@@ -59,7 +59,7 @@ This project demonstrates the deployment of a traditional on-premises Active Dir
 </details> 
 
 
-<b>3. CREATE VM DOMAIN CONTROLLER </b>
+<h3>3. CREATE VM DOMAIN CONTROLLER </h3>
 <p>In the search bar, type "VM", select Virtual Machines and press "+ Create" and select "Virtual Machines" to start creation of your Virtual Machine. Select the "rg-ad-lab" as the resource group, name your vm "vm-dc-1". For Image, select "Windows Server 2022, Datacenter: Azure Edition - x64 Gen2" For Size, select any with 2 VCPUs and at least 16 GB Ram. Set your username and password in the Admin Account section. Near the bottom, select "Next : Disk >" continue on to "Next : Networking >". </p>
 
 <details><summary>See screenshots</summary>
@@ -88,7 +88,7 @@ This project demonstrates the deployment of a traditional on-premises Active Dir
 <img src="images/Step 3d.PNG" width="60%">
 </details>
 
-<b>4. CREATE VM CLIENT </b>
+<h3>4. CREATE VM CLIENT </h3>
 <p>In the search bar, type "VM", select Virtual Machines and press "+ Create" and select "Virtual Machines" to start creation of your Virtual Machine. Select the "rg-ad-lab" as the resource group, name your vm "vm-client-1". For Image, select "Windows 10 Enterprise, version 22H2 - x64 Gen 2" For Size, select any with 2 VCPUs and at least 16 GB Ram. Set your username and password in the Admin Account section. Near the bottom, mark the checkbox in the Licensing section and select "Next : Disk >" continue on to "Next : Networking >". </p>
 
 <details><summary>See screenshots</summary>
@@ -117,7 +117,7 @@ Restart "vm-client-1" within the Azure Portal by going to your vm list. Mark the
 <img src="images/Step 4d.PNG" width="50%">
 </details>
 
-<b>5. INSTALL ACTIVE DIRECTORY </b>
+<h3>5. INSTALL ACTIVE DIRECTORY </h3>
 <p>Return to our Domain Controller from Step 3. View or Open "Server Manager > Dashboard". Select option 2. Add roles and features. Select "Next" 3 times, until we arrive at "Server Roles". Here select "Active Directory Domain Services". Select "Next" 3 times again. On the Confirmation screen, mark the checkbox "Restart the destination server automatically..." , and select "Install". </p>
 
 <details><summary>See screenshots</summary>
