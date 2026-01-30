@@ -42,7 +42,7 @@ This project demonstrates the deployment of a traditional on-premises Active Dir
 
 <h2>Deployment and Configuration</h2> 
 
-<b>1. CREATE RESOURCE GROUP. </b>
+<h3>1. CREATE RESOURCE GROUP. </h3>
 <p>Log into Azure Portal, and in the search bar type "Resource Groups", select Resource Groups and press "+ Create" to create a resouce group. Name your resource group "rg-ad-lab" and select "Review + Create", finally "Create". </p>
 
 <details><summary>See screenshots</summary>
